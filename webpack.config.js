@@ -92,7 +92,7 @@ module.exports = {
       patterns: [
         {
           from: path.join(__dirname, "src", frontendDirectory, "assets"),
-          to: path.join(__dirname, "dist", frontendDirectory),
+          to: path.join(__dirname, "dist", frontendDirectory, "assets"),
         },
       ],
     }),

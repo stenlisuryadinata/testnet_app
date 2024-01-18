@@ -11,7 +11,8 @@
     "prebuild": "npm run copy:types",
     "start": "webpack serve --mode development --env development",
     "prestart": "npm run copy:types",
-    "copy:types": "cp -r .dfx/$(echo ${DFX_NETWORK:-'**'})/canisters/** src/declarations"
+    "copy:types": "cp -r .dfx/local/canisters/** src/declarations"
+
   },
   "devDependencies": {
     "@dfinity/agent": "0.10.3",
